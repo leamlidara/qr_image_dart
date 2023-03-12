@@ -1,39 +1,29 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Make generating QR code images with logos easier by using popular [image](https://github.com/brendan-duncan/image) processing library and [QR code](https://github.com/kevmoo/qr.dart) library.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+To get started, import the dependency in your code:
 
 ```dart
-const like = 'sample';
+import 'package:qr_image/qr_image.dart';
 ```
 
-## Additional information
+To generate your QR code, you should do:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+var img1 = QRImage(
+    "https://google.com/",
+    backgroundColor: ColorUint8.rgb(255, 255, 255),
+    size: 300,
+  ).generate();
+```
+
+See the `example` directory for further details.
+
+## Sample
+
+![Sample 1](https://github.com/leamlidara/qr_image_dart/blob/main/image/pic1.png?raw=true)
+
+![Sample 2](https://github.com/leamlidara/qr_image_dart/blob/main/image/pic2.png?raw=true)
+
+![Sample 3](https://github.com/leamlidara/qr_image_dart/blob/main/image/pic3.png?raw=true)
