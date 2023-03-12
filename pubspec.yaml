@@ -1,5 +1,5 @@
 name: qr_image
-description: A starting point for Dart libraries or applications.
+description: Make generating QR code images with logos easier by using popular image processing library and QR code library.
 version: 1.0.0
 repository: https://github.com/leamlidara/qr_image_dart
 
